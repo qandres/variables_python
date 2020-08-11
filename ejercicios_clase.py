@@ -21,10 +21,18 @@ def ej1():
 
     # Operadores con números decimales
     print('Ingrese el primer número decimal a operar:')
-    numero_1 = int(input())
+    numero_1 = float(input())
 
     print('Ingrese el segundo número decimal a operar:')
-    numero_2 = int(input())
+    numero_2 = float(input())
+
+    suma = (numero_1 + numero_2)
+    
+    resta = (numero_1 - numero_2)
+
+    division = (numero_1 / numero_2)
+
+    multiplicacion = (numero_1 * numero_2)
 
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
@@ -35,31 +43,48 @@ def ej1():
     # El resultado de sumar 4 y 2 es 6
 
     # Suma
+     
+    print ('El resultado de sumar', numero_1, 'y', numero_2, 'es', suma  )
 
     # Resta
 
+    print ('El resultado de restar', numero_1, 'y', numero_2, 'es', resta  )
+
     # División
+
+    print ('El resultado de dividir', numero_1, 'y', numero_2, 'es', division  )
 
     # Multiplicación
 
+    print ('El resultado de multiplicar', numero_1, 'y', numero_2, 'es', multiplicacion  )
 
 def ej2():
     # Ejemplos variables de texto
 
     # Ingrese primero su nombre y luego su apellido
     # Capture ambos datos e imprima su nombre completo
+
     print('Ingrese su nombre/s:')
     nombre = str(input())
 
     print('Ingrese su apellido/s:')
     apellido = str(input())
 
+    nombre_completo = (nombre + apellido)
+
     # Imprima su nombre completo
+
+    print (nombre, apellido)
 
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
 
+    
+    nombre_completo = (nombre + apellido)
+
     # Imprimir la cantidad de letras que posee su nombre completo
+
+    print (len(nombre_completo))
 
 
 def ej3():
@@ -77,8 +102,19 @@ def ej3():
     palabra_3 = str(input())
 
     # De cada palabra debe tomar la primera letra y armar el acrónimo
+
+    subtext_1 = palabra_1[0]
+
+    subtext_2 = palabra_2[0]
+
+    subtext_3 = palabra_3[0]
+
+    acronimo = (subtext_1 + subtext_2 + subtext_3)
+
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
     # Imprimir el resultado en pantalla
+
+    print (acronimo)
 
 
 def ej4():
@@ -91,15 +127,26 @@ def ej4():
     print('Ingrese palabra 2:')
     palabra_2 = str(input())
 
-    # De la primera palabra tome las primeras tres letras, utilice el operador :
+
+
+    # De la primera palabra tome las primeras tres letras, utilice el operador 
+    
+    subtext_1 = palabra_1[0:3]
+
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
+
+    subtext_2 = palabra_2[-3:]
+
     # Formar una nueva palabra con los recortes solicitados
     # Imprima en pantalla los resultados
+     
+    nueva_palabra = (subtext_1 + subtext_2)
 
+    print (nueva_palabra)
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    # ej2()
-    # ej3()
-    # ej4()
+    #ej2()
+    #ej3()
+    #ej4()
