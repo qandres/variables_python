@@ -34,7 +34,31 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    print('Ingrese el primer número decimal a operar:')
+    numero_1 = float(input())
 
+    print('Ingrese el primer número decimal a operar:')
+    numero_2 = float(input())
+
+    suma = (numero_1 + numero_2)
+
+    resta = (numero_1 - numero_2)
+
+    multipliccion = (numero_1 * numero_2)
+
+    divsion = (numero_1 / numero_2)
+
+    potencia = (numero_1 ** numero_2)
+
+    print ('La suma entre', numero_1, 'y', numero_2, 'es', suma)
+
+    print ('La resta entre', numero_1, 'y', numero_2, 'es', resta)
+
+    print ('La multiplicacion entre', numero_1, 'y', numero_2, 'es', multipliccion)
+
+    print ('La division entre', numero_1, 'y', numero_2, 'es', divsion)
+
+    print ('El numeero', numero_1, 'elevado al', numero_2, 'es', potencia)
 
 def ej2():
     print('Ejercicios de práctica numérica y cadenas')
@@ -55,6 +79,18 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+
+    print('Ingrese su nombre completo:')
+    Nombre_Completo = str(input())
+    print('Ingrese su DNI:')
+    DNI = int(input())
+    print('Ingrese su edad:')
+    Edad= int(input())
+    print ('Ingrese su altura:')
+    Altura = float(input())
+
+    print ('Nombre Completo:', Nombre_Completo, 'DNI:', DNI)
+    print ('Edad:', Edad, 'Años', 'Altura:', Altura, 'mts')
 
 
 def ej3():
@@ -89,7 +125,18 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    print ('Ingrese el nombre completo de la Madre:')
+    Nombre_Madre = str(input())
+    print('Ingrese el nombre completo del  Padre:')
+    Nombre_Padre = str(input())
+    print('Ingrese el nombre completo del Hijo:')
+    Nombre_Hijo = str(input())
 
+    Separar = " "
+    Madre = Nombre_Madre.split (Separar)
+    Padre = Nombre_Padre.split (Separar)
+    print ("El nombre completo del hijo es {} {} {}".format(Nombre_Hijo, Padre[1], Madre[1]))
+    
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -123,7 +170,16 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
-
+    print ('Ingrese su nombre completo:')
+    Primera_Persona = str(input())
+    print('Ingrese su nombre completo:')
+    Segunda_Persona = str(input())
+    Segunda = Segunda_Persona.split (" ")
+    Apellido2 = (Segunda[1])
+    if Apellido2 in Primera_Persona:
+      print ('Son Familia')
+    else:
+      print ('No son familia')
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -149,12 +205,21 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
+    print ('Ingrese su nombre completo:')
+    Nombre_Completo = str(input())
+    Nombre_Minuscula = Nombre_Completo.lower()
+    Nombre_Mayuscula = Nombre_Completo.upper()
+    Primera_Mayuscula = Nombre_Completo.capitalize ()
+
+    print (Nombre_Minuscula)
+    print (Nombre_Mayuscula)
+    print (Primera_Mayuscula)
 
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    #ej1()
+    #ej2()
+    #ej3()
+    #ej4()
+    ej5()
